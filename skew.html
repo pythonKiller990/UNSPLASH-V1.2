@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SKew</title>
+  <style type="text/css">
+    .element {
+  display: inline-block;
+  background-color: #ccc;
+  height: 300px;
+  width: 300px;
+  font-size: 1px;
+  padding: 1px;
+  color: #999;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: skew 5s infinite;
+  transform: skew(10deg);
+  animation-direction: alternate;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+  opacity: .7;
+}
+
+.element span p
+{
+  text-align: center;
+}
+
+@keyframes skew {
+  0% {
+    transform: skew(30deg, 30deg);
+  }
+  100% {
+    transform: skew(-30deg, -30deg);
+  }
+}
+
+.avatar1
+{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('user1.png');
+  transform: translate(-50%,-50%);
+  background-size: cover;
+  border:10px #fff;
+  top:35%;
+  left: 50%;
+  border:1px #fff solid;
+  border-radius: 50%;
+}
+.avatar2
+{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('user2.png');
+  transform: translate(-50%,-50%);
+  background-size: cover;
+  border:10px #fff;
+  top:35%;
+  left: 50%;
+  border-radius: 50%;
+  border:1px #fff solid;
+}
+.avatar3
+{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('ser3.png');
+  transform: translate(-50%,-50%);
+  background-size: cover;
+  border:1px #fff solid;
+  top:35%;
+  left: 50%;
+  border-radius: 50%;
+}
+
+
+
+
+body, html {
+  height: 100%;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+  </style>
+</head>
+<body>
+
+  <div class="element"><div class="avatar1"></div>
+<span><p>User1</p></span></div>
+  <div class="element"><div class="avatar2"></div></div>
+  <div class="element"><dv class="avatar3"></dv></div>
+
+</body>
+</html>

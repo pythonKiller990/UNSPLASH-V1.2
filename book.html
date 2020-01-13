@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book</title>
+	<style type="text/css">
+		*
+		{
+			padding: 0;
+			margin: 0;
+		}
+
+		.back
+		{
+			transform: scale(.4);
+			width: 380px;
+			height: 650px;
+			background-image: url('chapter.png');
+			position: relative;
+			margin: 100px auto;
+			background-size: cover;
+			transform-style: preserve-3d;
+			perspective: 500px;
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		}
+		.cover
+		{
+			width: 100%;
+			height: 100%;
+			background-image: url('COVER.png');
+			background-size: cover;
+			position: absolute;
+			transform-origin: .50%;
+			transition: all 2s ease;
+			border-top-left-radius: 0px;
+		}
+		.back:hover .cover
+		{
+			transform:rotateY(-75deg);
+			  
+		}
+	</style>
+</head>
+<body>
+<div class="back">
+	<div class="cover">
+		
+	</div>
+</div>
+</body>
+</html>
